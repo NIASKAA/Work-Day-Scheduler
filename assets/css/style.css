@@ -21,8 +21,8 @@ textarea {
   border-bottom: 10px solid black;
 }
 
-.description {
-  white-space: pre-wrap;
+.userInputText {
+  white-space: pre-wrap;  
 }
 
 .time-block {
