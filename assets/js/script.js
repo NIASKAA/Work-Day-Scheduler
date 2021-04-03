@@ -6,12 +6,11 @@ $(document).ready(function(){
 
     $(".saveBtn").on("click", function(){
         console.log(this);
-        var text = $(this).siblings(".userInputText").val();
-        var time =$(this).parent().attr("id");
+        var textBox = $(this).siblings(".userInputText").val();
+        var timeBox =$(this).parent().attr("id");
 
-        localStorage.setItem(time, text);
+        localStorage.setItem(timeBox, textBox);
     })
-var hour = moment().hour();
 
 //load the stored data
 $("#hour1 .userInputText").val(localStorage.getItem("hour1"));
